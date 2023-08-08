@@ -1,1 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #0e0555,
+    #0a5b78,
+    #1f0b8c,
+    #031389
+  );
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "REM", sans-serif;
+}
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz {
+  height: 500px;
+  //   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+  }
+}

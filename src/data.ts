@@ -1,1 +1,1 @@
-// To store objects and defining types
+// To store objects
