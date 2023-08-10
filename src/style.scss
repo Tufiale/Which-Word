@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: black;
+  color: white;
   font-family: "Inter", sans-serif;
   font-family: "Lora", serif;
   font-family: "REM", sans-serif;
-  background-color: azure;
+  background-color: blue;
 }
 
 .navbar {
@@ -28,6 +28,7 @@
 
   &__question {
     text-align: center;
+    border: 2;
   }
 }
 
@@ -41,20 +42,31 @@
 .answers__buttons {
   justify-content: space-between;
   border-radius: 5px;
-  background-color: orange;
+  background-image: orange;
   padding: 40px;
   border: white solid 2px;
   transition-duration: 0.4s;
-
-  &__correct {
-    background-color: green;
-  }
-
-  &__incorrect {
-    background-color: red;
-  }
+  border-radius: 20px;
 }
 
 .answers__buttons:hover {
   color: white;
+}
+
+.footer__container {
+  margin-left: 120px;
+  margin-top: 100px;
+}
+
+.footer__countdown {
+  padding: 20px;
+}
+
+.footer__score {
+  font-size: x-large;
+  margin-left: 50px;
+}
+
+.next {
+  margin-left: 35px;
 }
