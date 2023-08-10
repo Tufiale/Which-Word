@@ -1,6 +1,6 @@
 .footer__container {
-  margin-left: 150px;
-  margin-bottom: 100px;
+  margin-left: 130px;
+  margin-bottom: 100%;
 }
 
 .footer__countdown {
@@ -10,9 +10,32 @@
 .footer__score {
   font-size: x-large;
   margin-left: 50px;
+  padding-top: 10px;
 }
 
 .next {
-  margin-left: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
   color: black;
+  border: 2px white solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    margin-left: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    margin-left: 450px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    margin-left: 650px;
+  }
 }
