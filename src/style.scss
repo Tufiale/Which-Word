@@ -45,16 +45,16 @@
   padding: 40px;
   border: white solid 2px;
   transition-duration: 0.4s;
+
+  &__correct {
+    background-color: green;
+  }
+
+  &__incorrect {
+    background-color: red;
+  }
 }
 
 .answers__buttons:hover {
   color: white;
-}
-
-.correct {
-  background-color: green;
-}
-
-.incorrect {
-  background-color: red;
 }

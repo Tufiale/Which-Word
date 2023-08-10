@@ -18,28 +18,32 @@ const updateQuizText = () => {
       quizQuestions[currentQuestionNumber].options[index];
   }
 };
-updateQuizText();
 
 const handleUpdateQuestion = () => {
   currentQuestionNumber++;
   updateQuizText();
+  currentAnswers.forEach((answer) => {
+    answer.style.backgroundColor = "";
+  });
 };
 
 const handleAnswer = (event: Event) => {
   const userAnswer = event.currentTarget.textContent;
   if (userAnswer === quizQuestions[currentQuestionNumber].answer) {
     event.currentTarget.style.backgroundColor = "green";
+    console.log(event);
   } else {
     event.currentTarget.style.backgroundColor = "red";
   }
 };
-// if the user answer matches the correct answers stored in object the button turns green if not, then red
 
-//  Event Listeners
-
+// Event Listener
 nextBtn.addEventListener("click", handleUpdateQuestion);
 currentAnswers.forEach((answer) => {
   answer.addEventListener("click", handleAnswer);
 });
 
-//50/50 button where wrong answers disappear
+// Next Button clears the red color and green color ---  DONE
+// Initial page needs to be a question
+// Stop watch
+// Maybe feature removing two answers
