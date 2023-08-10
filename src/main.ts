@@ -9,7 +9,7 @@ const nextBtn = document.querySelector(".next") as HTMLButtonElement;
 const score = document.querySelector(".footer__score") as HTMLHeadingElement;
 
 let currentQuestionNumber = 0;
-let correctScore = 0;
+let correctScore: any = 0;
 
 // Functions
 const updateQuizText = () => {
