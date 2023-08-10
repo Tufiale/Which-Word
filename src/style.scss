@@ -6,16 +6,17 @@
   font-family: "Inter", sans-serif;
   font-family: "Lora", serif;
   font-family: "REM", sans-serif;
-  background-color: blue;
 }
 
+body {
+  background: linear-gradient(#e66465, #9198e5);
+}
 .navbar {
   display: flex;
   justify-content: center;
 }
 
 .quiz {
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,22 +41,23 @@
 }
 
 .answers__buttons {
+  height: auto;
   justify-content: space-between;
-  border-radius: 5px;
-  background-image: orange;
   padding: 40px;
-  border: white solid 2px;
+  margin: 10px;
+  border: whitesmoke solid 2px;
   transition-duration: 0.4s;
   border-radius: 20px;
+  background-color: purple;
 }
 
 .answers__buttons:hover {
-  color: white;
+  color: orange;
 }
 
 .footer__container {
-  margin-left: 120px;
-  margin-top: 100px;
+  margin-left: 150px;
+  margin-bottom: 100px;
 }
 
 .footer__countdown {
@@ -69,4 +71,5 @@
 
 .next {
   margin-left: 35px;
+  color: black;
 }

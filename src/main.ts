@@ -28,10 +28,11 @@ const handleUpdateQuestion = () => {
   });
 };
 
-const handleAnswer = (event: Event) => {
+const handleAnswer = (event: any) => {
   const userAnswer = event.currentTarget.textContent;
   if (userAnswer === quizQuestions[currentQuestionNumber].answer) {
     event.currentTarget.style.backgroundColor = "green";
+    console.log(event);
     correctScore++;
     score.innerText = correctScore;
   } else {
