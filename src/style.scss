@@ -2,18 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #0e0555,
-    #0a5b78,
-    #1f0b8c,
-    #031389
-  );
-  color: white;
+  color: black;
   font-family: "Inter", sans-serif;
   font-family: "Lora", serif;
   font-family: "REM", sans-serif;
+  background-color: azure;
 }
 
 .navbar {
@@ -48,13 +41,20 @@
 .answers__buttons {
   justify-content: space-between;
   border-radius: 5px;
-  color: orange;
+  background-color: orange;
   padding: 40px;
   border: white solid 2px;
   transition-duration: 0.4s;
-  background-color: white;
 }
 
 .answers__buttons:hover {
   color: white;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
 }

@@ -1,8 +1,7 @@
-// To store objects
 type QuizQuestion = {
   question: string;
   options: string[];
-  answer: number;
+  answer: string;
 };
 
 export const quizQuestions: QuizQuestion[] = [
@@ -14,12 +13,12 @@ export const quizQuestions: QuizQuestion[] = [
       "Acrophobia",
       "Claustrophobia",
     ],
-    answer: 0,
+    answer: "Hippopotomonstrosesquippedaliophobia",
   },
   {
     question: "Which element has the chemical symbol 'Pb'?",
     options: ["Platinum", "Phosphorus", "Palladium", "Lead"],
-    answer: 3,
+    answer: "Lead",
   },
   {
     question: "Who was the first woman to win a Nobel Prize?",
@@ -29,31 +28,31 @@ export const quizQuestions: QuizQuestion[] = [
       "Florence Nightingale",
       "Amelia Earhart",
     ],
-    answer: 0,
+    answer: "Marie Curie",
   },
   {
     question: "What is the rarest M&M color?",
     options: ["Red", "Blue", "Brown", "Orange"],
-    answer: 2,
+    answer: "Brown",
   },
   {
     question: "What is the tallest mountain in Africa?",
     options: ["Mount Everest", "Kilimanjaro", "Mount McKinley", "Mount Fuji"],
-    answer: 1,
+    answer: "Kilimanjaro",
   },
   {
     question: "Which planet in our solar system has the most moons?",
     options: ["Jupiter", "Saturn", "Neptune", "Uranus"],
-    answer: 0,
+    answer: "Jupiter",
   },
   {
     question: "What is the main ingredient in traditional Japanese miso soup?",
     options: ["Seaweed", "Tofu", "Mushrooms", "Fish"],
-    answer: 1,
+    answer: "Tofu",
   },
   {
     question: "In Greek mythology, who was the goddess of victory?",
     options: ["Athena", "Hera", "Nike", "Artemis"],
-    answer: 2,
+    answer: "Nike",
   },
 ];

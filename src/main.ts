@@ -10,8 +10,6 @@ let currentAnswers =
   document.querySelectorAll<HTMLButtonElement>(".answers__buttons");
 const nextBtn = document.querySelector(".next") as HTMLButtonElement;
 
-console.log(currentAnswers);
-
 // Functions
 const updateQuizText = () => {
   currentQuestion.textContent = quizQuestions[currentQuestionNumber].question;
@@ -27,6 +25,21 @@ const handleUpdateQuestion = () => {
   updateQuizText();
 };
 
+const handleAnswer = (event: Event) => {
+  const userAnswer = event.currentTarget.textContent;
+  if (userAnswer === quizQuestions[currentQuestionNumber].answer) {
+    event.currentTarget.style.backgroundColor = "green";
+  } else {
+    event.currentTarget.style.backgroundColor = "red";
+  }
+};
+// if the user answer matches the correct answers stored in object the button turns green if not, then red
+
 //  Event Listeners
 
 nextBtn.addEventListener("click", handleUpdateQuestion);
+currentAnswers.forEach((answer) => {
+  answer.addEventListener("click", handleAnswer);
+});
+
+//50/50 button where wrong answers disappear
