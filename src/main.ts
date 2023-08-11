@@ -10,6 +10,11 @@ const score = document.querySelector(".footer__score") as HTMLHeadingElement;
 const messageHolder = document.querySelector(
   ".footer__answer"
 ) as HTMLHeadingElement;
+const countdownHolder = document.querySelector(
+  ".footer__countdown"
+) as HTMLHeadingElement;
+
+console.log(countdownHolder);
 
 let currentQuestionNumber = 0;
 let correctScore: any = 0;
@@ -25,6 +30,8 @@ const updateQuizText = () => {
 
 const handleUpdateQuestion = () => {
   currentQuestionNumber++;
+  countdown = 20;
+  updateCountdown();
   updateQuizText();
   currentAnswers.forEach((answer) => {
     answer.style.backgroundColor = "";
@@ -42,6 +49,19 @@ const handleAnswer = (event: any) => {
   } else {
     event.currentTarget.style.backgroundColor = "red";
     messageHolder.innerText = "Close! Maybe next time!";
+  }
+};
+
+let countdown = 20;
+
+const updateCountdown = () => {
+  if (countdown >= 0) {
+    countdown--;
+    console.log("is getting here");
+    setTimeout(updateCountdown, 1000);
+    countdownHolder.textContent = countdown.toString();
+  } else {
+    countdownHolder.textContent = "Countdown finished!";
   }
 };
 
