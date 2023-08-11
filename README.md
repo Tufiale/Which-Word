@@ -1,9 +1,9 @@
-# The Strongest Link
+# The-Pub-Quiz
 
-The Strongest Link
+The Pub Quiz
 
-You've heard of the 'Weakest Link', well here is the 'Strongest Link'.
+Throughout Covid, man and woman were able to band together to complete the ultimate challenge...The Pub Quiz.
 
 Test your general knowledge against these 8 questions as they progressively get harder!
 
-Using a combination of HTML, SCSS and Javascript/Typescript, a fun game was able to be made.
+Using a combination of HTML, SCSS and Javascript/Typescript, a simple but fun game was able to be made.
