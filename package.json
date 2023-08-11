@@ -1,4 +1,6 @@
 {
+  "homepage": "https://tufiale.github.io/the-strongest-link-game",
+  "author": "Tufiale Chowdhury",
   "name": "whichword",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test:jest": "vitest"
+    "test:jest": "vitest",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",
@@ -16,5 +19,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
