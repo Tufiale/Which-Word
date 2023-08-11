@@ -54,7 +54,6 @@ const handleAnswer = (event: any) => {
 const updateCountdown = () => {
   if (countdown >= 0) {
     countdown--;
-    console.log("is getting here");
     setTimeout(updateCountdown, 1000);
     countdownHolder.textContent = countdown.toString();
   } else {
