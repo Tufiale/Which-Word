@@ -18,6 +18,10 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
+
+  &__title {
+    font-size: xx-large;
+  }
 }
 
 .quiz {
