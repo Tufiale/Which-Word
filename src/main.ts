@@ -14,8 +14,7 @@ const countdownHolder = document.querySelector(
   ".footer__countdown"
 ) as HTMLHeadingElement;
 
-console.log(countdownHolder);
-
+let countdown = 20;
 let currentQuestionNumber = 0;
 let correctScore: any = 0;
 
@@ -51,8 +50,6 @@ const handleAnswer = (event: any) => {
     messageHolder.innerText = "Close! Maybe next time!";
   }
 };
-
-let countdown = 20;
 
 const updateCountdown = () => {
   if (countdown >= 0) {
