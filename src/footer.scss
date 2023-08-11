@@ -1,20 +1,24 @@
 .footer__container {
-  margin-left: 130px;
   margin-bottom: 100%;
 }
 
-.footer__countdown {
-  padding: 20px;
+.footer {
+  margin-left: 120px;
+}
+
+.footer__answer {
+  padding-bottom: 20px;
+  margin-left: 65px;
 }
 
 .footer__score {
   font-size: x-large;
-  margin-left: 50px;
+  margin-left: 175px;
   padding-top: 10px;
 }
 
-.next {
-  margin-left: 20px;
+.footer__next {
+  margin-left: 150px;
   margin-top: 10px;
   color: black;
   border: 2px white solid;
@@ -22,15 +26,23 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .footer__container {
-    margin-left: 350px;
+    margin-left: 25px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    margin-left: 200px;
+  }
+  .footer {
+    margin-left: 125px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .footer__container {
-    margin-left: 450px;
+    margin-left: 320px;
   }
 }
 

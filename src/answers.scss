@@ -8,7 +8,7 @@
 .answers__buttons {
   height: auto;
   justify-content: space-between;
-  padding: 40px;
+  padding: 30px;
   margin: 5px;
   border: whitesmoke solid 2px;
   transition-duration: 0.4s;
@@ -18,4 +18,11 @@
 
 .answers__buttons:hover {
   color: orange;
+}
+
+@media screen and (min-width: 1024px) {
+  .answers_container {
+    margin: 50px;
+    padding: 0;
+  }
 }
